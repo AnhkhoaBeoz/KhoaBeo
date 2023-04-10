@@ -1,0 +1,4 @@
+--patch-module
+com.thao.banvexe=_
+--add-reads
+com.thao.banvexe=ALL-UNNAMED

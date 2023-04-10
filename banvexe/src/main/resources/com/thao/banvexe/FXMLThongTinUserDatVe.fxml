@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="274.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.thao.banvexe.FXMLThongTinUserController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="THÔNG TIN KHÁCH HÀNG" textAlignment="CENTER" wrappingWidth="602.1367492675781">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Text>
+      <HBox alignment="CENTER" prefHeight="56.0" prefWidth="600.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Họ Tên Khách Hàng:" wrappingWidth="174.13674354553223">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="thongTinKH" prefHeight="26.0" prefWidth="410.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="65.0" prefHeight="56.0" prefWidth="600.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Số Điện Thoại:" wrappingWidth="174.13674354553223">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="sdt" prefHeight="26.0" prefWidth="410.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="121.0" prefHeight="56.0" prefWidth="600.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Số Ghế:" wrappingWidth="174.13674354553223">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="soGhe" prefHeight="26.0" prefWidth="410.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="44.0" prefWidth="600.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#datVe" text="Đặt Vé" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

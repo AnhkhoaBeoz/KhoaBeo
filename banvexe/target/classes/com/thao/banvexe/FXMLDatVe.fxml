@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="761.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.thao.banvexe.FXMLDatVeController">
+   <children>
+      <TabPane fx:id="tp" prefHeight="450.0" prefWidth="662.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab fx:id="tab1" text="Đặt Vé">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="113.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tìm chuyến xe">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtFind" layoutX="199.0" layoutY="35.0" prefHeight="26.0" prefWidth="324.0" />
+                        <TableView fx:id="tbChuyenXe" layoutY="88.0" prefHeight="303.0" prefWidth="762.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="tab2" text="Các Vé Đã Được Đặt">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <HBox alignment="CENTER" layoutY="14.0" prefHeight="52.0" prefWidth="662.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tìm theo tên khách hàng" wrappingWidth="215.73675394058228">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="txtFindKH" prefHeight="26.0" prefWidth="338.0" />
+                           </children></HBox>
+                        <VBox layoutY="96.0" prefHeight="296.0" prefWidth="762.0">
+                           <children>
+                              <TableView fx:id="tbVe" prefHeight="297.0" prefWidth="786.0" />
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+         </tabs></TabPane>
+   </children>
+</VBox>
